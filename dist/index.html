@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Othello
+  </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="game-container">
+      <div class="score-container">
+        
+        <div class="score-board">
+          <center>
+            <div class="tile black-piece" style="border: white;"></div>
+            <div class="score-black" >2</div>
+          </center>
+        </div>
+        
+        <div class="result"></div>
+        
+        <div class="score-board">
+          <center>
+            <div class="tile white-piece"></div>
+            <div class="score-white">2</div>
+          </center>
+        </div>
+        
+        <button id="restart" class="button">
+          restart
+        </button>
+        <button id="sound" class="button">
+          sound on
+        </button>
+      </div>
+      <div class="tile-container" >
+      </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+  <audio id="background" src="./background.mp3"></audio>
+  <audio id="move" src="./move.mp3"></audio>
+</body>
+</html>
